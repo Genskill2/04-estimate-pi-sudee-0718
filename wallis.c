@@ -25,13 +25,13 @@ int main(void) {
 }
 
 
-float wallis_pi(int n)
+float wallis_pi(int x)
 {
 	float y;
 	y = 1.0000;
-	for(int i=1;i<=n;i++)
+	for(int n=1;n<=x;n++)
 	{
-		y = y*(4.0*i*i)/((4.0*i*i)-1);
+		y = y*(4.0*n*n)/((4.0*n*n)-1);
 	}
 	y = y*2;
 	return y;
